@@ -1,0 +1,23 @@
+05c0036f  //  jal x6,0x0000005c        	jal t1, change
+f9c38367  //  jalr x6,x7,0xffffff9c    	jalr t1, t2, -100
+fe730ce3  //  beq x6,x7,0xfffffff8     	beq t1, t2, main
+049b9863  //  bne x23,x9,0x00000050    	bne s7, s1, change
+0003be03  //  ld x28,0x00000000(x7)    	ld t3, 0(t2)
+01d3b423  //  sd x29,0x00000008(x7)    	sd t4, 8(t2)
+f9c38313  //  addi x6,x7,0xffffff9c    	addi t1, t2, -100
+00362593  //  slti x11,x12,0x0000000   	slti a1, a2, 3
+f9c5ca13  //  xori x20,x11,0xffffff9   	xori s4, a1, -100
+f9c66593  //  ori x11,x12,0xffffff9c   	ori a1, a2, -100
+00aefe13  //  andi x28,x29,0x0000000   	andi t3, t4, 10
+00731293  //  slli x5,x6,0x00000007    	slli t0, t1, 7
+00a3d293  //  srli x5,x7,0x0000000a    	srli t0, t2, 10
+4118de13  //  srai x28,x17,0x0000001   	srai t3, a7, 17
+00638e33  //  add x28,x7,x6            	add t3, t2, t1
+41c38333  //  sub x6,x7,x28            	sub t1, t2, t3
+01ff1eb3  //  sll x29,x30,x31          	sll t4, t5, t6
+01dfaf33  //  slt x30,x31,x29          	slt t5, t6, t4
+0063ce33  //  xor x28,x7,x6            	xor t3, t2, t1
+00d655b3  //  srl x11,x12,x13          	srl a1, a2, a3
+4065dd33  //  sra x26,x11,x6           	sra s10, a1, t1
+00c5e333  //  or x6,x11,x12            	or  t1, a1, a2
+0063fe33  //  and x28,x7,x6            	and t3, t2, t1
